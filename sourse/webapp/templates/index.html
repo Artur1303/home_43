@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+</head>
+<body>
+<h1 class="head">Hello!!!Here you can solve examples</h1>
+<div class="container">
+<form action="/" method="post">
+    {% csrf_token %}
+    <label>First Number:</label><br/>
+    <input required type="text" name="fnumber"/><br/>
+    <br/>
+    <label>Second Number:</label><br/>
+    <input required type="text" name="snumber"/><br/>
+    <br/>
+    <input required type="submit" value="Calculate"/>
+
+
+<br>
+    <br>
+<input class="select" type="radio" name="select" value="add"> add
+    <br>
+<input class="select" type="radio" name="select" value="subtract"> subtract
+    <br>
+    <input class="select" type="radio" name="select" value="multiple"> multiple
+    <br>
+    <input class="select" type="radio" name="select" value="divide"> divide
+
+</form>
+   <h1 class="h" >Resault: {{ res }}</h1>
+</div>
+</body>
+</html>

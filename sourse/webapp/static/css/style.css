@@ -1,0 +1,23 @@
+body{
+    background-image: url('https://img3.goodfon.ru/original/2560x1600/f/88/fon-formuly-zakony-znaki.jpg');
+    color: white;
+
+}
+.head{
+    color: lawngreen;
+    text-align: center;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 50px;
+
+}
+.container {
+    max-width: 90%;
+    margin: 50px auto 0;
+
+}
+
+.h{
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    color: chartreuse;
+}
+
